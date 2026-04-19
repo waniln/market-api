@@ -1,4 +1,4 @@
-package com.exapmle.market_api.entity;
+package com.example.market_api.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -27,13 +27,13 @@ public class User {
     @Column(name ="profile_image")
     private String profileImage;
 
-    @Colunm(name = "manner_score")
+    @Column(name = "manner_score")
     private Double mannerScore = 36.5;
 
-    @Colunm(name = "created_at")
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 
-    @Colunm(name = "updated_ad")
+    @Column(name = "updated_ad")
     private LocalDateTime updatedAd;
 
     @PrePersist
